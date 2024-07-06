@@ -2,20 +2,20 @@
 "framework": "null",
 
 "functions":{
-    "web/index.php": { "runtime": "vercel-php@0.6.0"}
+    "api/index.php": { "runtime": "vercel-php@0.6.0"}
 },
 
 "routes": [   
     {
         "src": "/(.*)",
-        "dest": "/web/index.php"
+        "dest": "/api/index.php"
     }
 ],
 
 "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "true",
-    "APP_URL": "https://hng-stage1-new-mvb4.vercel.app/",
+    "APP_URL": "https://hng-stage1-new.vercel.app/",
 
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
