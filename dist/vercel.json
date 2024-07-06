@@ -2,13 +2,13 @@
 "framework": "null",
 
 "functions":{
-    "api/greet": { "runtime": "vercel-php@0.6.0"}
+    "api/index.php": { "runtime": "vercel-php@0.6.0"}
 },
 "routes": [
     
     {
         "src": "/(.*)",
-        "dest": "/api/greet"
+        "dest": "/api/index.php"
     }
 ],
 
@@ -27,4 +27,8 @@
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie"
-}}
+},
+
+"rewrites": [{ "source": "/(.*)", "destination": "/" }] 
+}
+
